@@ -1,0 +1,3 @@
+[submodule "droidbot"]
+	path = src/visidroid/droidbot
+	url = https://github.com/coinse/droidbot.git

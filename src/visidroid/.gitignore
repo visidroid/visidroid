@@ -1,0 +1,13 @@
+**/__pycache__
+.env
+*.egg-info
+target_apps/*.apk
+**/.DS_Store
+evaluation/data
+evaluation/baselines
+evaluation/ablation
+evaluation/data_new
+evaluation/
+scripts/chroma/
+gen_tests/
+gen_tests/*

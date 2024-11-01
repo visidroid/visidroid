@@ -1,1 +1,3 @@
 draft*.py
+src/visidroid/droidbot
+*.apk
