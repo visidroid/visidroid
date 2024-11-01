@@ -1,0 +1,15 @@
+Delete and Bob's message records
+Enable delivery reports
+Export all messages to 'Messages_2023_07_01_11_04_43.json'
+Mark the chat with Bob as Unread
+Remove accents and diacritics at sending messages
+Send a text message "Morning" to Alice
+Send long messages as MMS
+Send message by pressing Enter
+Switch custom colors to light and save it
+adjust font size to medium
+call Alice
+change the name of the chat with Alice to 'team_discussion'
+find messages with Alice
+show a character counter at writing messages
+view messages with Bob

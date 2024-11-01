@@ -1,0 +1,12 @@
+Do not prevent the phone from entering sleep mode when the application is running in the foreground
+Set the snooze time to 5 minute
+Set the sorting order for alarms by 'Day and Alarm time'
+add a new timer of 5:00
+change alarm max reminder duration to 1 minute
+change timer max reminder duration to 5 minutes
+check the frequently asked questions
+disable 'start week on sunday'
+open the clock page
+turn off always use same snooze time
+turn off increase volume gradually
+turn on the '7:00 am' alarm clock vibration function

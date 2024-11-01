@@ -1,0 +1,14 @@
+Add contact Bob to Favorites
+Change Bob's mobile number from '222222' to '12345678900'
+Change the font size of the Contacts app to medium
+Change theme color to light
+Create a new contact Stephen Bob, mobile number 12345678900
+Create a new group 'Classmates',add Alice,Bob and Jack to the new group, and text to the group 'GatheringInTheOldPlace'
+Delete contact Bob
+Disable showing the dial pad button on the main screen
+Export contacts to a .vcf file 'classmate.vcf''
+Open Bob's information page and call him
+Open dialpad and call 911
+Send a text message to Bob with the following content:'Goodmorning'
+Sort contacts based on "Date created" in descending order
+show phone numbers in the list view

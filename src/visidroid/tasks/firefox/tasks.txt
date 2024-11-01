@@ -1,0 +1,8 @@
+change language to Simplified Han
+check add-ons
+check bookmarks on firefox
+check firefox version
+go to the browsing history page
+open dark theme
+set firefox as the default browser
+view files dowloaded through firefox

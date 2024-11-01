@@ -1,1 +1,16 @@
-Find video.mp4
+add 'alarms' as favorite
+change font size of the File manager app to large
+change pressing 'back' from twice to once to leave the app
+change the storage type to sd card
+change the theme to light
+change the view type to grid
+check the total storage of my phone
+disable showing the 'recents' tabs
+go to 'download' folder and open Diary.pdf
+go to recents and play video2.mp4
+go to the 'recent' tab and open the test1.m4a
+open 'android' folder, sort the files by extension
+open screen_2023-06-30_141247.png with gallery, Always open with gallery
+sort the folders by size
+sort the folers by last modified in descending order
+temporarily show hidden files

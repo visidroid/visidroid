@@ -1,0 +1,14 @@
+Adjust the fontsize of the Notes app to 125%
+Create a checklist note called 'NewCheckList'
+Create a new note called 'test' and type '123456'
+Create a text note called 'test', type '12345678', and search for '234'
+Create a text note named 'NewTextNote'
+Delete the note 'Diary'
+Rename the note 'diary' to 'events'
+change the alignment to center
+create a checklist named 'test' and sort the items by creating date
+disable autosave notes
+export note 'Diary' as file diary.txt, only export the current file content
+print 'Diary' as diary.pdf
+set app theme to light and save it
+show the nunber of words in the Notes app

@@ -1,0 +1,5 @@
+Change column count to 3
+Change theme color to light
+Disable closing this app when launching a different one
+Sort apps by title in descending order
+search 'Clock' app and open it

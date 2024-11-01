@@ -1,0 +1,15 @@
+add the last photo to favorite
+check the size of the last photo I took
+close the shutter sound
+delete the last photo I took
+move the last photo I took to folder 'movies' in SD card
+open the last picture I took
+print the last picture I took as pic3.jpg
+record a short video
+rename the last photo to 'sunset'
+resize the last photo to 1000:473
+rotate right the last picture I took and save it as pic4.jpg
+set photo compression quality to 50%
+take a selfie
+take a short selfie video
+use volume button as shutter

@@ -1,0 +1,17 @@
+Add the holidays of China to the calendar
+Add the holidays of South Africa to the calendar and list all the events in 2023
+Add the holidays of United States to the calendar
+Use 24 hour formats in the Calendar app
+add all my contacts' birthdays into the calendar
+add all the contacts anniversaries into Calendar
+add the event of 'VisitParents' on july 30, remind me 1 hour before, save it
+change the event reminder sound of Calendar app to adara
+change the event type 'regular event' to 'deadlines'
+change the snooze time to 30 min
+change the view from monthly to yearly
+create a new event, the task is 'laundry', save it
+create an event of 'homework' with daily repetition and save it
+delete all the events in the Calendar app
+disable start week on Sunday
+export the events to test.ics under DCIM folder
+search the task 'homework'

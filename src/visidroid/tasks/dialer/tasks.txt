@@ -1,0 +1,15 @@
+Modify Alice's mobile number to 1234567890 and save it
+Sort contacts by first name
+Switch custom colors to light and save it
+add contact Alice to favorites
+adjust font size to medium
+call 911
+call Alice
+create a new contact John Smith, moblie number 12345678900
+delete all call history
+delete contact Jack
+search call history with Bob
+search contact Alice and check her info
+text Alice that I-love-you
+turn on hide dialpad numbers
+view favorite contacts

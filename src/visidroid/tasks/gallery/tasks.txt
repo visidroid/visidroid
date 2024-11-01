@@ -1,0 +1,9 @@
+Change the display mode from grid to list in the Gallery app
+Display five images per row in the Gallery app
+Do not display GIF images in the Gallery app
+Open DCIM folder in gallery app
+Restore the video to its previous playback position the next time it is opened
+Search for the DCIM folder in gallery app and open it
+Show all contents in all folders within the gallery app
+Sort folders in the Gallery app by name in descending order
+create a folder and name it 'traveling_photos' in the 'DCIM' folder, the folder path is 'Internal/DCIM/'

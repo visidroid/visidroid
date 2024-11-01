@@ -1,0 +1,9 @@
+Start recording automatically after launching the app
+change the theme color to white and save it
+hide the recording notification
+open 'frequently asked questions'
+search for 'test1' and click on the 'test1.m4a'
+set audio source to microphone
+set bitrate to 96 kbps
+set extension to mp3
+use player to play 'test2.m4a'

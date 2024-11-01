@@ -1,0 +1,9 @@
+Search for the song "test1" and play it
+change the mode to "Hip Hop"
+change the theme of the Music player app to light and save it
+check the 'Recordings' in the Folders
+play 'test1' in recordings and set the loop mode to 'loop the current song'
+play the song "test1" in the tracks
+set the sleep timer for five minutes
+set the song to gapless playback
+sort by year in descending order
