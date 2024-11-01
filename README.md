@@ -9,6 +9,17 @@ The source code is available in the [src](src) directory.
 
 ## Setup
 
+## Clone & Install Dependencies
+
+```bash
+$ git clone --recurse-submodule https://github.com/visidroid/visidroid
+$ cd src/visidroid/droidbot
+$ pip install -e . # Install droidbot
+$ cd ..
+$ pip install -r requirements.txt
+$ pip install -e . # Install visidroid
+```
+
 ### OpenAI Requirements
 
 Our tool, Visidroid, requires a multi-modal setup. Please ensure that your API key allows access to "GPT-4o" and "GPT-4". Create an `.env` file under `src/visidroid` with the following content:
@@ -30,16 +41,6 @@ Lower hardware settings may work but have not been tested for smooth performance
 
 The zip file containing 12 APKs for the apps used in our experiment can be downloaded from [Download](https://drive.google.com/file/d/1Q3OZwROO7K2Zm5AhFZzrdX82UPUkOBN7/view?usp=drive_link). Please extract it into `src/visidroid/target_apps`.
 
-## Clone & Install Dependencies
-
-```bash
-$ git clone --recurse-submodule https://github.com/visidroid/visidroid
-$ cd src/visidroid/droidbot
-$ pip install -e . # Install droidbot
-$ cd ..
-$ pip install -r requirements.txt
-$ pip install -e . # Install visidroid
-```
 
 ## Execution
 
