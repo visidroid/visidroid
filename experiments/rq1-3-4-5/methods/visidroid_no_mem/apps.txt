@@ -1,0 +1,11 @@
+calendar
+camera
+clock
+contacts
+dialer
+filemanger
+gallery
+message
+music
+notes
+voice

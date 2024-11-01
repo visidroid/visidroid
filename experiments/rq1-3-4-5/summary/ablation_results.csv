@@ -1,0 +1,20 @@
+﻿,VisiDroid,VisiDroid-m,VisiDroid-v,VisiDroid-r
+#Tasks,150,150,150,450 (x3)
+#Exact-match tasks,118,79 (-39),81 (-37),321
+#Completed tasks,127,89 (-38),92 (-35),341
+#Tasks not done but ended,2,29 (+27),17 (+15),-
+Exact-match(%),78.7,52.7 (-26.0),54.0 (-24.7),71.3 (-7.4)
+Task completion(%),84.7,59.3 (-25.4),61.3 (-23.4),75.8 (-8.9)
+,,,,
+,,,,
+,,,,
+Metric,VisiDroid,VisiDroid-m,VisiDroid-v,VisiDroid-r
+#Tasks,150,150,150,450 (x3)
+#Exact-match tasks,118,79 (-39),82 (-36),321
+#Completed tasks,127,89 (-38),93 (-34),341
+#Tasks achieved,131,92 (-39),104 (-27),-
+#Tasks not done but ended,2,29 (+27),18 (+16),-
+Exact-match(%),78.7,52.7 (-26.0),54.7 (-24.0),71.3 (-7.4)
+Prefix-match(%),82.6,67.3 (-15.3),68.0 (-14.6),-
+Precision (%),86.3,73.0 (-13.3),74.1 (-12.2),-
+Task completion(%),84.7,59.3 (-25.4),62.0 (-22.7),75.8 (-8.9)

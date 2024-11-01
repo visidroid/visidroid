@@ -1,0 +1,3 @@
+model,prompt_tokens,completion_tokens,total_tokens,n_tasks
+gpt-4o,39930655,1507642,41438297,181
+gpt-4-turbo,1460669,203080,1663749,181

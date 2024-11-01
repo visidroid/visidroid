@@ -1,0 +1,10 @@
+,visidroid_no_ranking
+#Tasks,450.0
+#Exact-match tasks,321.0
+#Completed tasks,341.0
+#Tasks achieved,360.0
+#Tasks not done but ended,18.0
+Exact-match(%),71.3
+Prefix-match(%),79.1
+Precision(%),82.4
+Task completion(%),75.8
