@@ -20,11 +20,11 @@ Please note that in our evaluation, we use the ground truth for reference only. 
 - **Generated Test Scripts:** All generated test scripts are zipped in [experiments/rq2-test-gen/test_scripts.zip](experiments/rq2-test-gen/test_scripts.zip).
 - **Test Script Runtime Evaluation:** The runtime evaluations of the test scripts are recorded in [experiments/rq2-test-gen/visidroid_evals.csv](experiments/rq2-test-gen/visidroid_evals.csv), along with some reasons for unexecutable test scripts.
 
-## Experimental Logs
+## Experimental Logs (Prompts and Recorded App States)
 
 ### Visidroid
 
-- **Full Log:** [Download](https://drive.google.com/file/d/18Ngdk6PkqjsmBQJQILFlp4rRnPOtE_0d/view?usp=drive_link)
+- **Full Model:** [Download](https://drive.google.com/file/d/18Ngdk6PkqjsmBQJQILFlp4rRnPOtE_0d/view?usp=drive_link)
 - **Memory Ablation:** [Download](https://drive.google.com/file/d/1NrXmXDjKfBk3BBgPhv2FrqhAFYnJBoBK/view?usp=drive_link)
 - **Vision Ablation:** [Download](https://drive.google.com/file/d/1_wxTo2JAMbX6TTBkR_XPMMUDams9ZfpY/view?usp=drive_link)
 
