@@ -28,7 +28,7 @@ MAX_STEP = 8000
 ## python run_visidroid.py --task "go to the 'recent' tab and open the test1.m4a" --app com.simplemobiletools.filemanager.pro_136 --output_dir ../evaluation/data_new/FileManager --is_emulator --train 3
 
 ###### Run many task in an APP with --task_file ########
-## python run_visidroid.py --task_file ../tasks/clock/tasks.txt --app com.simplemobiletools.clock_42 --output_dir ../evaluation/data_new/VoiceRecorder --is_emulator --train 3## python run_visidroid.py --task_file ../tasks/clock/tasks.txt --app com.simplemobiletools.clock_42 --output_dir ../evaluation/data_new/VoiceRecorder --is_emulator --train 3
+## python run_visidroid.py --task_file ../tasks/clock/tasks.txt --app com.simplemobiletools.clock_42 --output_dir ../evaluation/data_new/VoiceRecorder --is_emulator --train 3
 ## python run_visidroid.py --task_file ../tasks/camera/tasks.txt --app camera --output_dir ../evaluation/data_new/camera --is_emulator --train 3
 ## python run_visidroid.py --task_file ../tasks/musicplayer/tasks.txt --app musicplayer --output_dir ../evaluation/musicplayer/musicplayer --is_emulator --train 3
 ## python run_visidroid.py --task_file ../tasks/dialer/tasks.txt --app dialer --output_dir ../evaluation/dialer/dialer --is_emulator --train 3

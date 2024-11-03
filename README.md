@@ -15,9 +15,6 @@ The source code is available in the [src](src) directory.
 $ git clone --recurse-submodule https://github.com/visidroid/visidroid
 $ cd src/visidroid/droidbot
 $ pip install -e . # Install droidbot
-$ cd ..
-$ pip install -r requirements.txt
-$ pip install -e . # Install visidroid
 ```
 
 ### OpenAI Requirements
