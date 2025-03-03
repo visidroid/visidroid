@@ -704,6 +704,18 @@ class Device(object):
                     and "android.intent.category.LAUNCHER" in activities[activity]["categories"]:
                 main_activity = activity
         return main_activity
+    
+    def stop_app(self, app):
+        """
+        stop an app on device
+        :param app: an instance of App or a package name
+        """
+        if isinstance(app, App):
+            package_name = app.get_package_name()
+        else:
+            package_name = app
+        self.adb.shell(["am", "force-stop", package_name])
+
 
     def uninstall_app(self, app):
         """
