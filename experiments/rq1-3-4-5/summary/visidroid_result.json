@@ -1,14 +1,14 @@
 {
     "total_tasks": 150,
-    "total_exact_match_tasks": 118,
-    "exact_match_percentage": 0.7866666666666666,
-    "average_prefix_match": 0.8255930735930735,
-    "total_correct_actions": 613,
-    "total_actions": 794,
-    "macro_average_precision": 0.8625594775594775,
-    "micro_average_precision": 0.7720403022670025,
-    "task_achieved": 131,
-    "total_tasks_completed": 127,
-    "task_completion_percentage": 0.8466666666666667,
-    "task_not_done_but_end": 2
+    "total_exact_match_tasks": 131,
+    "exact_match_percentage": 0.8733333333333333,
+    "average_prefix_match": 0.9053544973544975,
+    "total_correct_actions": 622,
+    "total_actions": 711,
+    "macro_average_precision": 0.9139920634920635,
+    "micro_average_precision": 0.8748241912798875,
+    "task_achieved": 132,
+    "total_tasks_completed": 132,
+    "task_completion_percentage": 0.88,
+    "task_not_done_but_end": 5
 }
