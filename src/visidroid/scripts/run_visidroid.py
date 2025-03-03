@@ -218,13 +218,16 @@ if __name__ == "__main__":
     parser.add_argument('--evaluate', type=int, help='evaluation phase perform base on rule of training phase', default=None)
     parser.add_argument('--is_emulator', action='store_true', help='whether the device is an emulator or not', default=True)
     parser.add_argument('--debug', action='store_true', help='whether to run the agent in the debug mode or not', default=False)
-    parser.add_argument('--device_serial', type=str, help='serial number of the device to be used', default="emulator-5554")
     args = parser.parse_args()
     
     timestamp = time.strftime("%Y%m%d%H%M%S")
-    
+
 
     persona = OrderedDict()
+    persona.update(load_profile(args.profile_id))
+    assert 'name' in persona, f'The persona profile {args.profile_id} does not have a name'
+    persona_name = persona['name']
+    #Set up ultimate goal
     if args.task_file is not None:
         ultimate_goal_file = args.task_file
     elif args.task is not None:
@@ -262,7 +265,7 @@ if __name__ == "__main__":
             else:
                 output_dir = get_unique_output_dir(args.output_dir)
 
-            device = Device(device_serial=args.device_serial, 
+            device = Device(device_serial='emulator-5554', 
                             output_dir=output_dir, grant_perm=True, is_emulator=args.is_emulator)
             device.set_up()
             device.connect()
@@ -308,6 +311,47 @@ if __name__ == "__main__":
 
 
 
+    else:
+        persona.update({
+            'ultimate_goal': ultimate_goal,
+            # 'ultimate_goal': 'check whether the app supports interactions between multiple users', # for QuickChat case study
+            'initial_knowledge': initial_knowledge_map(args.app, persona_name, app_name),
+        })
+
+        os.makedirs(output_dir, exist_ok=True)
+        with open(f'{output_dir}/exp_info.json', 'w') as f:
+            json.dump({
+                'app_name': app_name,
+                'app_path': os.path.abspath(app_path),
+                'device_serial': device.serial,
+                'start_time': time.strftime('%Y-%m-%d %H:%M:%S', time.localtime())
+            }, f, indent=4)
+        
+        device.install_app(app)
+        device.start_app(app)
+
+        print('Waiting 10 secs for the app to be ready...')
+        print('Output directory:', os.path.abspath(output_dir))
+        time.sleep(5)
+        
+        try:
+            main(device, app, persona, debug=args.debug)
+        except (KeyboardInterrupt, TimeoutError) as e:
+            print("Ending the exploration due to a user request or timeout.")
+            print(e)
+            device.uninstall_app(app)
+            device.disconnect()
+            device.tear_down()
+            exit(0)
+
+        except Exception as e:
+            print("Ending the exploration due to an unexpected error.")
+            print(e)
+            device.uninstall_app(app)
+            device.disconnect()
+            device.tear_down()
+
+            raise e
         
     device.uninstall_app(app)
     device.disconnect()

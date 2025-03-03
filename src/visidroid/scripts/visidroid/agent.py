@@ -140,23 +140,27 @@ class VisiDroidFull(Agent):
 
     def step(self, droidbot_state=None):
         self.step_count += 1
-        logger.info(f'Step {self.step_count}, Mode: {self.mode}')
-        logger.info(f'Current Activity Coverage: {len(AppState.visited_activities)} / {len(agent_config.app_activities)}')
+        logger.info(f"Step {self.step_count}, Mode: {self.mode}")
+        logger.info(
+            f"Current Activity Coverage: {len(AppState.visited_activities)} / {len(agent_config.app_activities)}"
+        )
 
         if droidbot_state is not None:
             self.set_current_gui_state(droidbot_state)
 
-        with open(os.path.join(agent_config.agent_output_dir, 'exp_data.json'), 'w') as f:
+        with open(
+            os.path.join(agent_config.agent_output_dir, "exp_data.json"), "w"
+        ) as f:
             json.dump(self.exp_data, f, indent=2)
 
         if self.mode == MODE_PLAN:
             """
             * Plan
             """
-            
+
             self.actor.reset()
             first_action = self.planner.plan_task()
-            
+
             # If this phase is evaluate phase, we get rules and history from training phase
             if agent_config.train is None:
                 if not self.is_finalize:
