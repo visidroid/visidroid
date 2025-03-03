@@ -68,11 +68,11 @@ def get_task_by_task_desc(df, app_name, task_desc, df_path=None):
 
 
 # 'autodroid', 'droidagent', 'guardian', 'visidroid', 
-# methods = ['guardian','droidagent', 'autodroid',  'visidroid',  'visidroid_no_mem', 'visidroid_no_vision',]
+methods = ['guardian','droidagent', 'autodroid',  'visidroid',  'visidroid_no_mem', 'visidroid_no_vision',]
         #    'visidroid_no_vision']
         
-methods = ["visidroid", ]
-gt = 'groundtruth'
+# methods = ["visidroid", ]
+gt = r'experiments\rq1-3-4-5\groundtruth'
 
 gt_df = pd.read_excel(os.path.join(gt, 'all_tasks.xlsx'))
 gt_df = gt_df[gt_df['app_name']!= 'firefox']
@@ -89,7 +89,7 @@ method_dfs = {}
 not_founds = {}
 founds = {}
 for method in methods:
-    base_dir = os.path.join('methods', method)
+    base_dir = os.path.join(r'experiments\rq1-3-4-5\methods', method)
     method_dfs[method] = pd.read_excel(os.path.join(base_dir, 'all_tasks.xlsx'))
     not_founds[method] = []
     founds[method] = []
@@ -99,7 +99,7 @@ for index, row in merged_df.iterrows():
     app_name = row['app_name']
 
     for method in methods:    
-        base_dir = os.path.join('methods', method)
+        base_dir = os.path.join(r'experiments\rq1-3-4-5\methods', method)
         task = get_task_by_task_desc(method_dfs[method], app_name, task_desc, os.path.join(base_dir, 'all_tasks_.xlsx'))
         if task is None and (method == 'visidroid_no_vision' or method == 'visidroid_no_mem'):
             task = get_task_by_task_desc(method_dfs['visidroid'], app_name, task_desc, os.path.join(base_dir, 'all_tasks_.xlsx'))
@@ -109,9 +109,9 @@ for index, row in merged_df.iterrows():
         else:
             founds[method].append(task)
             merged_df.at[index, method] = task['soa']
-            merged_df.at[index, f"valid"] = task['VALID']
-            merged_df.at[index, f"optimal"] = task['OPTIMAL']
-            merged_df.at[index, f"note"] = task['NOTE']
+            # merged_df.at[index, f"valid"] = task['VALID']
+            # merged_df.at[index, f"optimal"] = task['OPTIMAL']
+            # merged_df.at[index, f"note"] = task['NOTE']
             
             # if merged_df.at[index, method] == row['groundtruth']: set eval to 1
             if not isinstance(row['groundtruth'], str) or not isinstance(task['soa'], str):

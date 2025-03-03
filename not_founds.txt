@@ -1,0 +1,33 @@
+guardian
+=======
+droidagent
+=======
+autodroid
+=======
+visidroid
+camera: add the last photo to favorite
+camera: check the size of the last photo I took
+camera: move the last photo I took to folder 'movies' in SD card
+camera: rename the last photo to 'sunset'
+camera: resize the last photo to 1000:473
+camera: set photo compression quality to 50%
+dialer: Sort contacts by first name
+dialer: create a new contact John Smith, moblie number 12345678900
+dialer: search call history with Bob
+dialer: search contact Alice and check her info
+dialer: text Alice that I-love-you
+notes: Create a new note called 'test' and type '123456'
+=======
+visidroid_no_mem
+dialer: Sort contacts by first name
+dialer: create a new contact John Smith, moblie number 12345678900
+dialer: search call history with Bob
+dialer: search contact Alice and check her info
+dialer: text Alice that I-love-you
+=======
+visidroid_no_vision
+dialer: Sort contacts by first name
+dialer: create a new contact John Smith, moblie number 12345678900
+dialer: search contact Alice and check her info
+dialer: text Alice that I-love-you
+=======
